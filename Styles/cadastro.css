@@ -1,0 +1,50 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(135deg, #2c2c2c, greenyellow);
+
+}
+.box{
+background-color: #2c2c2c;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+padding: 80px;
+border-radius: 15px;
+color: #fff;
+
+
+}
+#data_nascimento{
+border: none;
+padding: 8px;
+border-radius: 10px;
+outline: none;
+font-size: 15px;
+} 
+.nominal{
+    border-radius: 5px;
+    font-size: 15px;
+    gap: 1rem;
+}         
+fieldset{
+    border:  1px solid #0084ff;
+  
+}                  
+legend{
+    border:  1px solid #0084ff;
+  
+}
+.submit-btn{
+    background-color: #0084ff;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.submit-btn:hover{
+    background-color: #004c94
+}

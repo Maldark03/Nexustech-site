@@ -1,0 +1,242 @@
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Arial';
+   
+}
+
+.header-inner-content{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar{
+    background-color: #2c2c2c;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 10px 0px 10px #2c2c2c;
+    z-index: 99;
+}
+.navbar>div{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.logo{
+    color: azure;
+}
+
+.logo span{
+    color: greenyellow;
+}
+.logo span{
+    color: greenyellow;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 1rem;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li:hover{
+    transform: translateY(-5px);
+    transition: all 0.2s;
+    font-weight: bold;
+}
+
+.munu-Button{
+    display: none;
+}
+
+main{
+    background-color: whitesmoke; 
+    margin-bottom: 1rem 
+}
+button{
+    cursor: pointer;
+}
+.page_title{
+    font-family: lato;
+    font-size: 30px;
+    padding: 50px 0;
+    text-align: center;
+}
+.content{
+
+    display: flex;
+
+ }
+    
+section{
+    flex:1
+}
+aside{
+    min-width: 250px;
+    background: #eee;
+}
+.finalizador{
+    background-color: #0084ff;
+    display: block;
+    width: 100%;
+    color: #fff;
+    border: 0;
+    padding:15px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+}
+.finalizador:hover{
+    background-color: #004c94;
+}
+.box{
+    margin-bottom: 15px;
+    border: 2px solid #cccc;
+}
+.head_aside{
+    padding: 15px 20px;
+    font-size: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.aside_info{
+padding: 20px;
+
+}
+.aside_text{
+    display: flex;
+justify-content: space-between;
+margin-bottom: 10px;
+}
+.aside_button button{
+    color: #0084ff;
+    background: transparent;
+    border: 0;
+    display: flex;
+    align-items: center;
+}
+.aside_button button:hover{
+   color:  #004c94;
+}
+.aside_footer{
+    font-size: 20px;
+    padding: 15px 20px;
+    background: #ddd;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    
+    
+    
+    
+}
+th{
+    text-align: left;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color:#666;
+}
+tr{
+    border-bottom: 3px solid #eee;
+}
+
+tr{
+    border-bottom: 3px solid #eee;
+}
+td{
+padding: 30px 0;
+}
+.product{
+    display: flex;
+    align-items: center;
+}
+.imageproduct{
+    max-width: 120px;
+    max-height: 100px;
+    border-radius: 50px;
+}
+.info{
+    margin-left: 30px;
+}
+.title{
+    font-size: 20px;
+}
+.categoria{
+    color: #666;
+}
+.remover{
+    background: #eee;
+    border: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+
+}
+.qty .Quantidade {
+    background: #eee;
+    display: inline-flex;
+    padding: 5px 0;
+    justify-content: center;
+    text-align: center;
+    width: 60px;
+    border-radius: 5px;
+    height: 40px;
+}
+
+
+
+.remover:hover{
+    background: #ddd;
+}
+
+
+
+
+
+
+
+.footer-content{
+    display:flex;
+    background-color: #2c2c2c;
+    padding: 2rem ;
+    max-width: 1400px;
+    flex-direction: column;
+}
+
+.logo-footer{
+    text-align: center;
+    color: azure;
+}
+.logo-footer span{
+    color: greenyellow;
+}
+
+.footer-content>h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

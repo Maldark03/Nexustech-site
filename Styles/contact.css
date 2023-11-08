@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Poppins:wght@100&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Arial';
+    background-color: #cccc;
+}
+
+.header-inner-content{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar{
+    background-color: #2c2c2c;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 10px 0px 10px #2c2c2c;
+    z-index: 99;
+}
+.navbar>div{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.logo{
+    color: azure;
+}
+
+.logo span{
+    color: greenyellow;
+}
+.logo span{
+    color: greenyellow;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 1rem;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li:hover{
+    transform: translateY(-5px);
+    transition: all 0.2s;
+    font-weight: bold;
+}
+
+.munu-Button{
+    display: none;
+}
+/*header*/
+/*main*/
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: aliceblue;
+    margin-bottom: 1rem;
+    
+}
+.titulo{
+    margin-top: 4rem;
+    font-size: 1.8rem;
+    justify-content: center;
+    font-family: sans-serif;
+    color: #333;
+}
+.title-contact{
+    margin: 0 40px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+    .title-contact .tab{
+        position: relative;
+        background-color: #fff;
+        padding: 0 20px 20px;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .title-contact .tab input{
+        appearance: none;
+    }
+    .title-contact .tab label{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    .title-contact .tab label::after{
+        content: '+';
+        position: absolute;
+        right: 20px;
+        font-size: 2em;
+        color: rgba(0, 0, 0, 0.1);
+        transition: transform 0.5s;
+    }
+    .title-contact .tab:hover label::after{
+        color: #2c2c2c;
+    }
+    .title-contact .tab input:checked  ~  label::after{
+        transform: rotate(135deg);
+    }
+    .title-contact .tab label h2{
+        width: 40px;
+        height: 40px;
+        background: #2c2c2c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 1.25em;
+        border-radius: 5px;
+        margin-right: 10px ;
+    
+    }
+    .title-contact .tab input:checked  ~  label h2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: rgba(255, 255, 255, 0.2);
+        font-size: 8em;
+        justify-content: flex-end;
+        padding: 20px;
+    }
+    .title-contact .tab:nth-child(2) label h2{
+        background: linear-gradient(135deg, #49c628, #adff2f);
+
+    }
+    .title-contact .tab:nth-child(3) label h2{
+        background: linear-gradient(135deg, #3c8ce7, #00eaff);
+
+    }
+    .title-contact .tab:nth-child(4) label h2{
+        background: linear-gradient(135deg, #fd6e6a, #ffc600);
+
+    }
+    .title-contact .tab:nth-child(5) label h2{
+        background: linear-gradient(135deg, #ff0000, #c32bac);
+
+    }
+    .title-contact .tab label h3{
+        position: relative;
+        font-weight: 500;
+        color: #2c2c2c;
+        z-index: 10;
+    }
+    .title-contact .tab input:checked  ~  label h3{
+        background: #fff;
+        padding: 2px 10px;
+        color: #333;
+        border-radius: 2px;
+        box-shadow: 0 15px rgb(0, 0, 0, 0.05);
+    }
+    .title-contact .tab .paragrafo{
+        max-height: 0;
+        transition: 1s;
+        overflow: hidden;
+    }
+    .title-contact .tab input:checked  ~ .paragrafo{
+        max-height: 100vh;
+
+    }
+    .title-contact .tab .paragrafo p {
+        position: relative;
+        padding: 10px 0;
+        color: #2c2c2c;
+        z-index: 10;
+        color: #fff;
+    }
+    section{
+        background-color: #2c2c2c;
+        height:500px ;
+        width: 400px;
+       
+    }
+    .title-sec{
+       text-align: center;
+       justify-content: center;
+       color: #fff;
+     
+    }
+    .form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px 45px;
+        gap: 0.4rem;
+        
+    }
+    .title-sec h2{
+        font-size: 2.5em;
+        color: #333;
+        margin-top: 20px;
+        color: #fff;
+    }
+
+    .form button{
+        text-align: center;
+        border-radius: 0;
+        cursor: pointer;
+        margin-top: 5px;
+
+    }
+
+    .footer-content{
+        display:flex;
+        background-color: #2c2c2c;
+        padding: 2rem ;
+        max-width: 1400px;
+        flex-direction: column;
+    }
+    
+    .logo-footer{
+        text-align: center;
+        color: azure;
+    }
+    .logo-footer span{
+        color: greenyellow;
+    }
+    
+    .footer-content>h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }

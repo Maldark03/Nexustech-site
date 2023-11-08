@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Arial';
+}
+
+.header-inner-content{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar{
+    background-color: #2c2c2c;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 10px 0px 10px #2c2c2c;
+    z-index: 99;
+}
+.navbar>div{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.logo{
+    color: azure;
+}
+
+.logo span{
+    color: greenyellow;
+}
+.logo span{
+    color: greenyellow;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 1rem;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li:hover{
+    transform: translateY(-5px);
+    transition: all 0.2s;
+    font-weight: bold;
+}
+
+.munu-Button{
+    display: none;
+}
+
+
+/* MAIN*/
+main{
+    background-color: #fff;
+    margin-bottom: 1rem;
+}
+
+
+h2{
+        
+        text-align: center;
+        justify-content: center;
+        text-decoration: none;
+        margin-top: 4rem;
+        font-size: 1.8rem;
+        color: #2c2c2c;
+    }
+
+
+
+
+.page-inner-content{
+    max-width: 1200x;
+    margin: 0 auto;
+    
+}
+
+.cols{
+    display: flex;
+    max-width: 1200px;
+    max-height: 400px;
+    align-items: center;
+    justify-content: space-around;
+   flex-direction: column;
+    flex-wrap: wrap;
+} 
+.cols-4 img{
+    
+    max-width: 300px;
+    max-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    
+    flex-wrap: wrap;
+} 
+    
+
+
+
+.cols>*{
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.cols >div button{
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+
+
+.rate{
+    color:#daa520;
+}
+strong{
+    color:#000;
+}
+
+.footer-content{
+    display:flex;
+    background-color: #2c2c2c;
+    padding: 2rem ;
+    max-width: 1400px;
+    flex-direction: column;
+}
+
+.logo-footer{
+    text-align: center;
+    color: azure;
+}
+.logo-footer span{
+    color: greenyellow;
+}
+
+.footer-content>h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusTech|Meu Carrinho</title>
+    <link rel="stylesheet" href="./Styles/Cart.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="code.js/Carrinho.js"></script>
+</head>
+<body>
+    <header>
+    <div class="navbar show-menu">
+        <div class="header-inner-content">
+            <h1 class="logo">NEXUS<span>TECH</span></h1>
+                <nav>
+                    <ul>
+                        <li><a href="Loja virtual.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="Sobre.html">Quem somos</a></li>
+                        <li><a href="Contato.html">Contatos</a></li>
+                        <li><a href="login.html">Conta</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <a href="carrinho.html" title="Carrinho">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" class="bi bi-bag" viewBox="0 0 16 16">
+                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                          </svg>
+                    </a>
+                    <a class="menu-Button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                          </svg>
+                    </a>
+                </div>
+        </div>
+    </div>
+</header> 
+<main>
+    <div class="page_title">
+        <h2> Seu Carrinho</h2>
+    </div>
+    <div class="content">
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Quantidade</th>
+                    <th>Total</th>
+                    <th>_</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="produtoscarrinho">
+                <td>
+                    <div class="product">
+                        <img class="imageproduct" src="./imagens project/product8.png " alt="televisão">
+                        <div class="info">
+                            <div class="title">
+                                <p>Smart tv 4K UHD- samsung</p>
+                            </div>
+                            <div class="categoria">
+                                <p>Eletrônicos</p>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td  ><span class="productPrice">R$ 1300</span></td>
+                <td >
+                    <div class="qty">
+                        <input type="number" class="Quantidade" min="0" value="2">
+                    </div>
+                </td>
+                <td>R$ 2600</td>
+                <td><button class="remover"><i class='bx bx-x'></i></td></button></td>
+            </tr>
+            <tr class="produtoscarrinho">
+                <td>
+                    <div class="product">
+                        <img class="imageproduct" src="./imagens project/product4.png " alt="smatwatch">
+                        <div class="info">
+                            <div class="title">
+                                <p>SmartWatch xiaomi GI08</p>
+                            </div>
+                            <div class="categoria">
+                                <p>Relógios</p>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td ><span class="productPrice">R$ 320</span></td>
+                
+                <td>
+                    <div class="qty">
+                        <input type="number" class="Quantidade" min="0" value="2">
+                    </div>
+                </td>
+                <td>R$ 640</td>
+                <td><button class="remover"><i class='bx bx-x'></i></td></button></td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+    <aside>
+       <div class="box">
+        <header class="head_aside">Resumo da Compra</header>
+        <div class="aside_info"> 
+        <div class="aside_text"><span>Sub-Total:</span> <span class="Valortotal">R$ 3240,00</span></div>
+        <div class="aside_text"><span>Frete:</span> <span>Grátis</span></div>
+        <div class="aside_button"><button>Adicionar cupom de desconto<i class='bx bx-right-arrow-alt'></i></button></div>
+    </div>
+       </div>
+       <footer class="aside_footer">
+        <span>Total: </span>
+        <span class="Price"> R$ 3240,00</span>
+       </footer>
+       <button class="finalizador"onclick="final();">Finalizar Compra</button>
+    </aside>
+</div>
+</main>
+<footer class="gray-background">
+    <div class="footer-content">
+        
+        <div class="logo-footer">
+            <h1>NEXUS<span>TECH</span></h1>
+            <p>Nós da NexusTech agradeçemos a parceria de nossos clientes <br>
+            e a aprovação desta aplicação
+            </p>
+        </div>
+    </footer>
+
+    
+</body>
+
+
+
+</html>

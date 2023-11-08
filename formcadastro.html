@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se/Nexustech</title>
+    <link rel="stylesheet" href="./Styles/cadastro.css">
+</head>
+<body>
+   
+   <div class="box">
+
+    <form action="config.php" method="post">
+    <fieldset>
+        <legend><b>Formulário de Cadastro</b></legend>
+        <br>
+        <div class="inputs">
+        <label for="name">Nome Completo:</label>
+        <br>
+        <input type="text" name="name" id="name" class="nominal" required>
+        </div>
+        <div class="inputs">
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" name="email" id="email" class="nominal" required>
+        </div>
+            <div class="inputs">
+                <label for="Telefone">Telefone:</label>
+                <br>
+                <input type="tel" name="Telefone" id="Telefone" class="nominal" required>
+             </div>
+             <p>Sexo:</p>
+             <input type="radio" id="feminino" nome="genero" value="feminino"required>
+             <label for="feminino">Feminino</label>
+             <br>
+             <input type="radio" id="masculino" nome="genero" value="masculino"required>
+             <label for="masculino">masculino</label>
+             <br>
+             <input type="radio" id="outros" nome="genero" value="outros"required>
+             <label for="outros">outros</label>
+             <br>
+             <div class="inputs">
+                <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+                <input type="date" name="data_nascimento" id="data_nascimento"  required>
+            </div>
+
+     
+
+            <div class="inputs">
+                <label for="cidade">Cidade:</label>
+                <br>
+                <input type="text" name="cidade" id="cidade" class="nominal" required>
+            </div>
+
+            <div class="inputs">
+                <label for="Estado">Estado:</label>
+                <br>
+                <input type="text" name="Estado" id="Estado" class="nominal" required>
+            </div>
+
+            <div class="inputs">
+                <label for="End">Endereço:</label>
+                <br>
+                <input type="text" name="End" id="End" class="nominal" required>
+            </div>
+                <input type="submit" value="Enviar" class="submit-btn">
+    </fieldset>
+    
+</form>
+   </div>
+</body>
+</html>
